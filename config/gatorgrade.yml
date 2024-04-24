@@ -30,6 +30,11 @@ setup: |
         fragment: TODO
         count: 0
         exact: true
+      objectives:
+        LO3:
+          degree:
+            - DS: "I"
+              rationale: "PO1. pass indicates use of web-based platform to present visualized data"
 
 - index.html:
     - description: Ensure that the index.html file exists
@@ -138,6 +143,11 @@ setup: |
         fragment: "Tableau Public"
         count: 1
         exact: false
+      objectives:
+        LO3:
+          degree:
+            - DS: "I"
+              rationale: "PO1. pass indicates use of web-based platform to present visualized data"
     - description: Mention specific tools used in 03_data.md
       check: MatchFileFragment
       options:
@@ -173,25 +183,45 @@ setup: |
       options:
         fragment: "observations"
         count: 1
-        exact: false 
+        exact: false
+      objectives:
+        LO2:
+          degree:
+            - IM: "I"
+              rationale: "PO1. pass indicates element impacting visualization described"
     - description: Mention specific data characteristics in 03_data.md
       check: MatchFileFragment
       options:
         fragment: "variables"
         count: 1
-        exact: false 
+        exact: false
+      objectives:
+        LO2:
+          degree:
+            - IM: "I"
+              rationale: "PO1. pass indicates element impacting visualization described"
     - description: Mention specific data characteristics in 03_data.md
       check: MatchFileFragment
       options:
         fragment: "categorical"
         count: 1
         exact: false
+      objectives:
+        LO2:
+          degree:
+            - IM: "I"
+              rationale: "PO1. pass indicates element impacting visualization described"
     - description: Mention specific phrase in 03_data.md
       check: MatchFileFragment
       options:
         fragment: "he key elements of this visualization"
         count: 1
-        exact: false 
+        exact: false
+      objectives:
+        LO2:
+          degree:
+            - IM: "I"
+              rationale: "PO1. pass indicates key elements of visualization identified and described"
     - description: Write a minimum number of meaningful words in 03_data.md
       check: CountFileWords
       options:
@@ -241,7 +271,12 @@ setup: |
       options:
         fragment: "he key elements of this visualization"
         count: 1
-        exact: false 
+        exact: false
+      objectives:
+        LO2:
+          degree:
+            - IM: "I"
+              rationale: "PO1. pass indicates key elements of visualization identified and described"
 
 - _report/05_recommendations.md:
     - description: Ensure that the 05_recommendations.md file exists
@@ -303,6 +338,11 @@ setup: |
         fragment: "https://public.tableau.com/"
         count: 1
         exact: false 
+      objectives:
+        LO3:
+          degree:
+            - DS: "I"
+              rationale: "PO1. pass indicates use of web-based platform to present visualized data"
     - description: Confirm that 05_recommendations.md has the correct number of headers
       check: CountMarkdownTags
       options:
