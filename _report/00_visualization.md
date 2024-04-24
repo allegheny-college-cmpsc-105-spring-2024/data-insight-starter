@@ -1,13 +1,25 @@
 ---
-layout: page
-title: supplement
-permalink: /supplement
+layout: post
+title: "Visualization"
+permalink:
 nav: true
 ---
 
-TODO: from your profile on https://public.tableau.com/, select 
+Instructions
 
-## Additional Figures
+- TODO: embed an image that showcases your project insight.
+- TODO: if the image was generated in Spyder, it must be located in
+  assets\images and embded with markdown syntax
+- TODO: if the image was published to Tableau Public, follow the 
+  instructions below.
+- from your profile on https://public.tableau.com/, navigate to
+  a published figure or dashboard that showcases your most distilled
+  insight. Click on the `share` icon `copy embed code`. Paste the
+  code into this file! If the formatting looks incorrect, try using this
+  [site to automatically reformat the html](https://www.freeformatter.com/html-formatter.html#before-output).
+  If the javascript looks poorly formatted, try using this
+  [site to automatically reformat the javascript](https://www.freeformatter.com/javascript-beautifier.html). The correctly formatted embed code will resemble the example below.
+- TODO: Remove all extra text from this file to clean up the website appearance.
 
 <div class='tableauPlaceholder' id='viz1713922146093' style='position: relative'>
    <noscript><a href='#'><img alt='Sheet 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17127641017740&#47;Sheet4&#47;1_rss.png' style='border: none' /></a></noscript>

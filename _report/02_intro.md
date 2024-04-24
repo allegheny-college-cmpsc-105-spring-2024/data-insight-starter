@@ -5,12 +5,12 @@ permalink:
 nav: true
 ---
 
-Rabbits like lettuce.
+Instructions
 
-- TODO: pretending that you ate at the restaurant, write a
-  paragraph review as a food critic and restaurant owner.
-  - gatorgrade will check for at least 150 words.
-  - NB that something you write will be quoted later by the author
-  of the website.
-- TODO: make a link in markdown to the site that you reviewed
-- TODO: push your changes and make sure that the link works online!
+- TODO: write a markdown header that says `Introduction`
+- TODO: gatorgrade will look for a minimum of 50 words.
+- TODO: please write a short introduction to your project.
+- TODO: at some point in the introduction, explain your
+  hypothesis, starting with the phrase, `The hypothesis
+  being explored is`.
+- TODO: remove all unneeded text

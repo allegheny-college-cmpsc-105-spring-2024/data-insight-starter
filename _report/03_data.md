@@ -5,12 +5,25 @@ permalink:
 nav: true
 ---
 
-Lettuce can be grown with hydroponics.
+Instructions
 
-- TODO: pretending that you ate at the restaurant, write a
-  paragraph review as a food critic and restaurant owner.
-  - gatorgrade will check for at least 150 words.
-  - NB that something you write will be quoted later by the author
-  of the website.
-- TODO: make a link in markdown to the site that you reviewed
-- TODO: push your changes and make sure that the link works online!
+- TODO: write a markdown header that says `Data`
+- TODO: gatorgrade will look for a minimum of 200 words.
+- TODO: please write about the data used in your project.
+- TODO: include information about the raw data that is relevant
+  to your project.
+
+Further Instructions
+
+- TODO: write a markdown header that says `Processing`
+- TODO: please write about the data processing and exploration
+  steps that you took with the dataset
+- TODO: write about the tools that you used
+- TODO: write about what visual explorations you tried and why.
+  This is the narrative part where your expert knowledge shapes
+  the data and analysis into a story.
+- TODO: Support your story with at least one figure that helped
+  you arrive at your final insight.
+- TODO: The figure must have all axes labelled.
+- TODO: The type of figure and any meaningful components must be identified.
+- TODO: remove all unneeded text

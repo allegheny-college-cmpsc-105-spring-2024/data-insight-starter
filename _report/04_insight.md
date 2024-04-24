@@ -5,12 +5,11 @@ permalink:
 nav: true
 ---
 
-Lettuce can be grown with hydroponics.
+Instructions
 
-- TODO: pretending that you ate at the restaurant, write a
-  paragraph review as a food critic and restaurant owner.
-  - gatorgrade will check for at least 150 words.
-  - NB that something you write will be quoted later by the author
-  of the website.
-- TODO: make a link in markdown to the site that you reviewed
-- TODO: push your changes and make sure that the link works online!
+- TODO: write a markdown header that says `Insights`
+- TODO: gatorgrade will look for a minimum of 150 words.
+- TODO: please write about the final visual result you obtained
+- TODO: The figure must have all axes labelled.
+- TODO: The type of figure and any meaningful components must be identified.
+- TODO: 
