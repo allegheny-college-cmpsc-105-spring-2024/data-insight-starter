@@ -1,6 +1,15 @@
 # Basic workflow
 name: build
 
+# Allow write permissions
+permissions:
+  contents: write
+
+# Use more columns for terminal output
+env:
+  COLUMNS: 120
+  PYTHONIOENCODING: utf8
+
 # Controls when the action will run
 # Workflow begins with push or PR events
 # Focuses on the master branch only
@@ -14,6 +23,8 @@ on:
 # This job performs all necessary checks
 jobs:
   build:
+    # do not allow a build to run for more than 5 minutes
+    timeout-minutes: 5
     # Use the latest version of Ubuntu
     runs-on: ubuntu-latest
     strategy:
@@ -44,3 +55,21 @@ jobs:
           run:  |
             pip install gatorgrade
             gatorgrade --config config/gatorgrade.yml
+        # Get the current time
+        - name: Get the Current Time
+          uses: josStorer/get-current-time@v2
+          if: always()
+          id: current-time
+          with:
+            format: YYYYMMDD-HH-mm-ss
+            utcOffset: "-05:00"
+        # Write the collected GatorGrade data to the designated branch
+        - name: Write Collected Data to Designated Branch
+          uses: GatorEducator/BranchWrite@v1.0.1
+          if: always()
+          with:
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
+            branch: insight
+            path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
+            source: env
+            source-arg: JSON_REPORT
