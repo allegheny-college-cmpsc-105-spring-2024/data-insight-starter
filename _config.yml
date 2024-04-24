@@ -1,0 +1,10 @@
+title: "Data Insight"
+# TODO: update your name below
+author: Anonymous IV
+google_analytics: G-FDG725B6FJ
+
+theme: minima
+
+collections:
+  report:
+    output: true
