@@ -1,7 +1,6 @@
 ---
 layout: post
-# TODO: update the title inside the quotes to suit your restaurant review needs
-title: "rev 1"
+title: "Introduction"
 permalink:
 nav: true
 ---

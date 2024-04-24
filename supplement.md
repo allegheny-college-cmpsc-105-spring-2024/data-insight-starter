@@ -5,9 +5,9 @@ permalink: /supplement
 nav: true
 ---
 
-https://public.tableau.com/views/Book1_17127641017740/Sheet4?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link
+TODO: from your profile on https://public.tableau.com/, select 
 
-## Tableau Public Figures
+## Additional Figures
 
 <div class='tableauPlaceholder' id='viz1713922146093' style='position: relative'>
    <noscript><a href='#'><img alt='Sheet 4 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17127641017740&#47;Sheet4&#47;1_rss.png' style='border: none' /></a></noscript>

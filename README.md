@@ -116,6 +116,8 @@ in the Spyder IDE to further process the data.
 6. TODO: Check GitHub actions and make adjustments locally as needed
 7. TODO: Resubmit work to GitHub using git as needed
 
+https://www.freeformatter.com/html-formatter.html#before-output
+
 ## How to clone your repo
 
 - TODO: in GitHub, copy the SSH link to your repo from the green `code` button
