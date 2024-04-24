@@ -23,14 +23,16 @@ of your choice equivalent to 2-3 labs. This involves the following steps:
 
 The learning objective addressed by this assignment are:
 
-- Developing hypotheses based on motivating problems and/or observations and identify appropriate
-  data to address hypotheses.
-- Identifying and describing key elements in different types of data visualizations.
-- Using web-based platforms to accurately present data sets through multiple visualizations.
-- Using an open-source programming language to compute summary statistics and visualize key patterns
-  in the data.
-- Contributing to and presenting structured, web-based documentation that describes data exploration
-  steps and visualization-based conclusions.
+- Developing hypotheses based on motivating problems and/or observations and
+  identify appropriate data to address hypotheses.
+- Identifying and describing key elements in different types of data
+  visualizations.
+- Using web-based platforms to accurately present data sets through multiple
+  visualizations.
+- Using an open-source programming language to compute summary statistics and
+  visualize key patterns in the data.
+- Contributing to and presenting structured, web-based documentation that
+  describes data exploration steps and visualization-based conclusions.
 
 ## Detailed TODOs
 
@@ -68,18 +70,32 @@ It may be the case that your hypothesis is incorrect, but having it as a guide
 will be useful for constructing a narrative, writing about the process,
 and explaining your work to others.
 
+### Turn the Repo into a website, then clone the repo
+
+- TODO: Before cloning, in GitHub, go to settings>pages. Under branch, click
+  `main` and then `save`. Refresh after 30-60 seconds to get live link!
+- TODO: Clone your repo using git - steps outlined below
+- TODO: in GitHub, copy the SSH link to your repo from the green `code` button
+- TODO: Open a terminal
+- TODO: `cd` to a location where you would like to store the project repo
+- TODO: type `git clone` then paste in the link
+- TODO: in spyder, open a new project from existing directory.
+- navigate to this lab and then hit create. You should then see all your files
+  in the left hand panel
+
 ### Use Tableau Public to visually explore the data
 
 With data and a question in hand, use tableau public to begin your data
 exploration.
 
-- TODO: Please make at least two visualizations that help you understand
-  the data and .
+- TODO: Please make at least one visualization that helps you understand
+  the data and advance your narrative.
 - TODO: In Tableau Public, label all axes and title all figures.
 - TODO: Make legends and any annotations as needed to make the figures
   as clear as possible.
-- TODO: Publish the figures to tableau public (no dashboard needed)
-- TODO: retrieve an embed link to use within your project narrative
+- TODO: Publish the figures to tableau public (dashboard optional)
+- TODO: retrieve an embed link to use within your project narrative as either
+  the primary figure, an analysis figure, or an appendix figure
 
 ### Use python to compute summary statistics about the main insight
 
@@ -100,108 +116,36 @@ in the Spyder IDE to further process the data.
   your insight.
 - TODO: in `final.py` make the simplest figure to show your insight.
 - TODO: ensure that the figure is fully labeled
-- TODO: save the figure in `assets/images` as `final.jpg`. The extension
+- TODO: save the figure in `assets/images` as `spyder.jpg`. The extension
   does not have to be exact.
+- NOTE: if your most simplified insight was already shown with Tableau, you
+  must still make a figure with Spyder to add to your narrative or the appendix
 
-- Use python to plot the summarized data
-- Document the above exploration process and conclusion online
+### Document the above exploration process and conclusions
 
-0. TODO: in GitHub, go to settings>pages (you can add /settings/pages to the url)
-   Under branch, click  `main` and then `save`. Refresh after 30 seconds to get live link!
-1. TODO: Clone your repo using git, and open the project in Spyder
-2. TODO: Visually explore your data in Tableau Public
-3. TODO: Create a python file in Spyder to generate at least one figure and summary statistics
-4. TODO: Add content to the markdown pages about your project
-5. TODO: Submit work to GitHub using git
-6. TODO: Check GitHub actions and make adjustments locally as needed
-7. TODO: Resubmit work to GitHub using git as needed
-
-https://www.freeformatter.com/html-formatter.html#before-output
-
-## How to clone your repo
-
-- TODO: in GitHub, copy the SSH link to your repo from the green `code` button
-- TODO: Open a terminal
-- TODO: `cd` to a location where you would like to store lab 5
-- TODO: type `git clone` then paste in the link
-- TODO: in spyder, open a new project from existing directory.
-  - navigate to this lab and then hit create. You should then see all your files
-    in the left hand panel. There are no code cells to run, but you can edit
-    Markdown.
-
-## How to update this website with content
-
-This website is for a restaurant that you would like to make or attend.
-Come up with a concept for your restaurant. The concept does not have to be
-realistic, but keep in mind that this website is viewable online.
-
-- TODO: fill out the `index.md` with a description of the concept of your restaurant
-  - `index.md` will become the home page of the website automatically, so include
-    information that you think belongs on the home page.
-- TODO: fill out the `menu.md` with at least one menu item and one photo
-  - `menu.md` will automatically be linked in the website header for easy access.
-- TODO: fill out the `contact.md` with fake contact information for your restaurant
-  - `contact.md` will automatically be linked in the website header for easy access.
-- TODO: submit your changes to GitHub
-  - See below for `How to push your work onto GitHub`
-
-## How to push your work onto GitHub
+- TODO: Add content to the markdown pages in the `_report` directory
+- The files named 00-07 will be combined into one report that is shown on the
+  website. Check inside each file to find further instructions.
+   
+### Submit work to GitHub using git
 
 - Open a terminal
-- `cd` to the lab 5 directory on your computer
+- `cd` to the project directory on your computer
 - type `git status` to see a list of files you have updated
 - type `git add .` to "stage" your files
 - type `git commit -m "message`
 - type `git push origin main`
 - type your ssh passphrase if requested
 - wait approx 20 seconds and check GitHub Actions build status
-- refresh your website page and check it out!
+- refresh your website page to view changes
 
-## Before the final submission
+### Before the final submission
 
 - Please check the gatorgrade report in GitHub Actions and resolve
   any issues, including completing and deleting all TODO markers.
+- TODO: Resubmit work to GitHub using git as needed
 
-## References
+### References
 
 - [Starter Repo for reference](https://github.com/allegheny-college-cmpsc-105-spring-2024/data-insight-starter)
 - [Starter Website url](https://allegheny-college-cmpsc-105-spring-2024.github.io/data-insight-starter/)
-
-## Random
-
-
-
-TODO: Look at your analytics data. Write about the
-different sources of data contributing to the analytics automatic dashboards.
-If you were a real restaurant owner, explain how this information could help
-you improve your business and why you came to your conclusions.
-
-TODO: include at least one analytics plot to back up your claims.
-
-
-![logo](./assets/images/magnifying-glass-logo.jpeg){:width="200"}
-
-# Project
-
-- TODO: Fill in the content of this file with information about your project
-  - this markdown file will become the home page of the website automatically
-  - use good markdown style
-  - the website formatting is limited to markdown, but
-  [markdown can still do a lot](https://www.markdownguide.org/tools/jekyll/)
-
-## Abstract
-
-## Introduction and Motivation
-
-## Data Set
-
-TODO: please explain where the data originally came from
-TODO: explain how you obtained the data
-TODO: explain the variables you use so an unfamiliar person can understand
-
-## Data Exploration Steps
-
-TODO: include embedded
-
-TODO: add a reference section called `References` as a heading
-TODO: add any references that you used as markdown links

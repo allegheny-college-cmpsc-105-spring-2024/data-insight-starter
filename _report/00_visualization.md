@@ -5,12 +5,12 @@ permalink:
 nav: true
 ---
 
-Instructions
+Instructions in `00_visualization.md`
 
 - TODO: embed an image that showcases your project insight.
 - TODO: if the image was generated in Spyder, it must be located in
-  assets\images and embded with markdown syntax
-- TODO: if the image was published to Tableau Public, follow the 
+  assets\images and embedded with markdown syntax
+- TODO: if the image was published to Tableau Public, follow the
   instructions below.
 - from your profile on https://public.tableau.com/, navigate to
   a published figure or dashboard that showcases your most distilled

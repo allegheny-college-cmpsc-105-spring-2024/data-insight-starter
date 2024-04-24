@@ -5,7 +5,7 @@ permalink:
 nav: true
 ---
 
-Instructions
+Instructions in `03_data.md`
 
 - TODO: write a markdown header that says `Data`
 - TODO: gatorgrade will look for a minimum of 200 words.
@@ -13,7 +13,7 @@ Instructions
 - TODO: include information about the raw data that is relevant
   to your project.
 
-Further Instructions
+Further Instructions in `03_data.md`
 
 - TODO: write a markdown header that says `Processing`
 - TODO: please write about the data processing and exploration

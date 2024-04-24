@@ -5,7 +5,7 @@ permalink:
 nav: true
 ---
 
-Instructions
+Instructions in `01_summary.md`
 
 - TODO: write a markdown header that says `Summary`
 - TODO: gatorgrade will look for a minimum of 50 words.
