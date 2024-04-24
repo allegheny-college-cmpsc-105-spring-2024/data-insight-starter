@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "about"
+title: "insight"
 ---
 
 ![logo](./assets/images/magnifying-glass-logo.jpeg){:width="200"}
