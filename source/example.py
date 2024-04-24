@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 #%% function to recode categorical variables into numbers
 
 # TODO: if your observations have categorical variables you want coded into
@@ -28,6 +29,7 @@ def format_sample(sample: str):
 #%% read in the data into a numpy array
 
 # TODO: check that the working directory is the data-insight directory by typing pwd
+# TODO: update the datafile to have the path to final.csv in assets/data/
 datafile = './assets/data/example.csv'
 header = True
 

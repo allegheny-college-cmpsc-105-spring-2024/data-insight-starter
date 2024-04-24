@@ -13,4 +13,4 @@ Instructions in `02_intro.md`
 - TODO: at some point in the introduction, explain your
   hypothesis, starting with the phrase, `The hypothesis
   being explored is`.
-- TODO: remove all unneeded text
+- TODO: remove all unneeded prompts

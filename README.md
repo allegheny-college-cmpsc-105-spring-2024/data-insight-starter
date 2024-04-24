@@ -106,18 +106,18 @@ in the Spyder IDE to further process the data.
 - TODO: duplicate the `example.py` in the `source` directory
 - TODO: name your file `final.py` in the `source` directory
 - TODO: upload your own data file to `assets/data`
-- TODO: ensure your data file has the name `data.csv`
+- TODO: ensure your data file has the name `final.csv`
 - TODO: ensure that your data has headings in the first row
 - TODO: ensure that none of the headings have spaces
-- TODO: edit lines as needed in `final.py` to read your `data.csv`
+- TODO: edit lines as needed in `final.py` to read your `final.csv`
 - TODO: sanity check the `datamat` to make sure that your data is there
 - TODO: based on prior exploration or exploration done within `final.py`
   reduce your data to the simplest summary statistic that represents
   your insight.
 - TODO: in `final.py` make the simplest figure to show your insight.
 - TODO: ensure that the figure is fully labeled
-- TODO: save the figure in `assets/images` as `spyder.jpg`. The extension
-  does not have to be exact.
+- TODO: save the figure in `assets/images` as `spyder.png`. The extension
+  does have to be exact by exporting or saving from spyder.
 - NOTE: if your most simplified insight was already shown with Tableau, you
   must still make a figure with Spyder to add to your narrative or the appendix
 

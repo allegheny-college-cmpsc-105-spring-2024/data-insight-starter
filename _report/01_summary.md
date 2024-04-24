@@ -12,4 +12,4 @@ Instructions in `01_summary.md`
 - TODO: please write an abstract that summarizes your main finding
   and why it is important or interesting from the point of view
   of experts in the field.
-- TODO: remove all unneeded text
+- TODO: remove all unneeded prompts

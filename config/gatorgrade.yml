@@ -3,37 +3,43 @@ setup: |
 ---
 
 # perform checks on a file
-- README.md:
-    - description: Ensure that the README.md file exists
+- source/final.py:
+    - description: Ensure that the final.py file exists
       check: ConfirmFileExists
-    - description: Complete all TODOs, remove the TODO markers in README.md
+    - description: Complete all TODOs, remove the TODO markers in final.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+        
+- assets/data/final.csv:
+    - description: Ensure that the final.csv file exists
+      check: ConfirmFileExists
+      
+- assets/data/images/spyder.png:
+    - description: Ensure that the spyder.png file exists
+      check: ConfirmFileExists
+      
+- _report/00_visualization.md:
+    - description: Ensure that the 00_visualization.md file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in 00_visualization.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
 
-- index.md:
-    - description: Ensure that the index.md file exists
+- index.html:
+    - description: Ensure that the index.html file exists
       check: ConfirmFileExists
-    - description: Complete all TODOs, remove the TODO markers in index.md
+    - description: Complete all TODOs, remove the TODO markers in index.html
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: include heading for Reviews in index.md
-      check: MatchFileFragment
-      options:
-        fragment: "# Reviews"
-        count: 1
-        exact: false
-    - description: include quotes under the reviews using Markdown syntax (in index.md)
-      check: MatchFileFragment
-      options:
-        fragment: ">"
-        count: 2
-        exact: false
 
 - _config.yml:
     - description: Ensure that the _config.yml file exists
@@ -44,98 +50,296 @@ setup: |
         fragment: TODO
         count: 0
         exact: true
-
-- menu.md:
-    - description: Ensure that the menu.md file exists
+                
+- _report/01_summary.md:
+    - description: Ensure that the 01_summary.md file exists
       check: ConfirmFileExists
-    - description: Complete all TODOs, remove the TODO markers in menu.md
+    - description: Complete all TODOs, remove the TODO markers in 01_summary.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: include at least one menu item photo in menu.md
+    - description: Create Summary heading in 01_summary.md
       check: MatchFileFragment
       options:
-        fragment: "]("
+        fragment: "# Summary"
         count: 1
-        exact: false
-    - description: remove the default image in menu.md
-      check: MatchFileFragment
-      options:
-        fragment: "magnifying-glass-logo.jpeg"
-        count: 0
         exact: true
-
-- contact.md:
-    - description: Ensure that the contact.md file exists
+    - description: Write a minimum number of meaningful words in 01_summary.md
+      check: CountFileWords
+      options:
+        count: 50
+        exact: false
+    - description: Confirm that 01_summary.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 1
+        exact: false 
+        
+- _report/02_intro.md:
+    - description: Ensure that the 02_intro.md file exists
       check: ConfirmFileExists
-    - description: Complete all TODOs, remove the TODO markers in contact.md
+    - description: Complete all TODOs, remove the TODO markers in 02_intro.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: include at least one heading in contact.md
+    - description: Create Introduction heading in 02_intro.md
       check: MatchFileFragment
       options:
-        fragment: "# Hours"
+        fragment: "# Introduction"
         count: 1
         exact: true
-
-- _explorations/review1.md:
-    - description: Ensure that the _explorations/review1.md file exists
-      check: ConfirmFileExists
-    - description: Write minimum of 150 words in _explorations/review1.md
-      check: CountFileWords
-      options:
-        count: 150
-        exact: false
-    - description: include link in markdown to the site that you reviewed in review1.md
+    - description: State the hypothesis in 02_intro.md
       check: MatchFileFragment
       options:
-        fragment: "]("
+        fragment: "The hypothesis being explored is"
         count: 1
-        exact: false
-
-- _explorations/review2.md:
-    - description: Ensure that the _explorations/review2.md file exists
-      check: ConfirmFileExists
-    - description: Write minimum of 150 words in _explorations/review2.md
+        exact: false    
+    - description: Write a minimum number of meaningful words in 02_intro.md
       check: CountFileWords
       options:
-        count: 150
+        count: 50
         exact: false
-    - description: include link in markdown to the site that you reviewed in review2.md
-      check: MatchFileFragment
+    - description: Confirm that 02_intro.md has the correct number of headers
+      check: CountMarkdownTags
       options:
-        fragment: "]("
+        tag: heading
         count: 1
-        exact: false
-
-- _explorations/analytics.md:
-    - description: Ensure that the _explorations/analytics.md file exists
+        exact: false 
+  
+- _report/03_data.md:
+    - description: Ensure that the 03_data.md file exists
       check: ConfirmFileExists
-    - description: Complete all TODOs, remove the TODO markers in analytics.md
+    - description: Complete all TODOs, remove the TODO markers in 03_data.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: Write minimum of 150 words in _explorations/analytics.md
-      check: CountFileWords
-      options:
-        count: 150
-        exact: false
-    - description: include at least 1 image from assets/images in analytics.md
+    - description: Create Data heading in 03_data.md
       check: MatchFileFragment
       options:
-        fragment: assets/images
+        fragment: "# Data"
+        count: 1
+        exact: true
+    - description: Create Explorations heading in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "# Explorations"
         count: 1
         exact: false
+    - description: Mention specific tools used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "Tableau Public"
+        count: 1
+        exact: false
+    - description: Mention specific tools used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "Spyder"
+        count: 1
+        exact: false 
+    - description: Mention specific tools used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "Numpy"
+        count: 1
+        exact: false
+    - description: Mention specific tools used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "Python"
+        count: 1
+        exact: false 
+    - description: Mention specific tools used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "Matplotlib"
+        count: 1
+        exact: false
+    - description: Mention specific data format used in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "csv"
+        count: 1
+        exact: false
+    - description: Mention specific data characteristics in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "observations"
+        count: 1
+        exact: false 
+    - description: Mention specific data characteristics in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "variables"
+        count: 1
+        exact: false 
+    - description: Mention specific data characteristics in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "categorical"
+        count: 1
+        exact: false
+    - description: Mention specific phrase in 03_data.md
+      check: MatchFileFragment
+      options:
+        fragment: "he key elements of this visualization"
+        count: 1
+        exact: false 
+    - description: Write a minimum number of meaningful words in 03_data.md
+      check: CountFileWords
+      options:
+        count: 250
+        exact: false
+    - description: Confirm that 03_data.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 2
+        exact: false   
+
+- _report/04_insight.md:
+    - description: Ensure that the 04_insight.md file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in 04_insight.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create Insights heading in 04_insight.md
+      check: MatchFileFragment
+      options:
+        fragment: "# Insights"
+        count: 1
+        exact: true   
+    - description: Write a minimum number of meaningful words in 04_insight.md
+      check: CountFileWords
+      options:
+        count: 100
+        exact: false
+    - description: Confirm that 04_insight.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 1
+        exact: false 
+    - description: Remove template material in 04_insight.md
+      check: MatchFileFragment
+      options:
+        fragment: "../assets/images/magnifying-glass-logo.jpeg"
+        count: 0
+        exact: true
+    - description: Mention specific phrase in 04_insight.md
+      check: MatchFileFragment
+      options:
+        fragment: "he key elements of this visualization"
+        count: 1
+        exact: false 
+
+- _report/05_recommendations.md:
+    - description: Ensure that the 05_recommendations.md file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in 05_recommendations.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create Conclusions heading in 05_recommendations.md
+      check: MatchFileFragment
+      options:
+        fragment: "# Conclusions"
+        count: 1
+        exact: true   
+    - description: Write a minimum number of meaningful words in 05_recommendations.md
+      check: CountFileWords
+      options:
+        count: 50
+        exact: false
+    - description: Confirm that 05_recommendations.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 1
+        exact: false   
+  
+- _report/06_references.md:
+    - description: Ensure that the 06_references.md file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in 06_references.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create References heading in 06_references.md
+      check: MatchFileFragment
+      options:
+        fragment: "# References"
+        count: 1
+        exact: true   
+    - description: Add embedded link in a markdown list in 06_references.md
+      check: MatchFileFragment
+      options:
+        fragment: "- ["
+        count: 2
+        exact: false   
+    - description: Add embedded link in a markdown list in 06_references.md
+      check: MatchFileFragment
+      options:
+        fragment: "]("
+        count: 2
+        exact: false 
+    - description: Add embedded link in a markdown list in 06_references.md
+      check: MatchFileFragment
+      options:
+        fragment: "https://public.tableau.com/"
+        count: 1
+        exact: false 
+    - description: Confirm that 05_recommendations.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 1
+        exact: True
+  
+- _report/07_appendix.md:
+    - description: Ensure that the 07_appendix.md file exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers in 07_appendix.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create Appendix heading in 07_appendix.md
+      check: MatchFileFragment
+      options:
+        fragment: "# Appendix"
+        count: 1
+        exact: false   
+    - description: Confirm that 07_appendix.md file has the correct number of fenced code blocks
+      check: CountMarkdownTags
+      options:
+        tag: code_block
+        count: 2
+        exact: false    
+    - description: Confirm that 07_appendix.md has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 1
+        exact: false  
 
 # count number of commits in the GitHub repository
-- description: Have a total of at least 9 local commits in repository
+- description: Have a total of at least 6 local commits in repository
   check: CountCommits
   options:
-    count: 9
+    count: 6
