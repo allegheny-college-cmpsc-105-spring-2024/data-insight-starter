@@ -17,7 +17,7 @@ setup: |
     - description: Ensure that the final.csv file exists
       check: ConfirmFileExists
       
-- assets/data/images/spyder.png:
+- assets/images/spyder.png:
     - description: Ensure that the spyder.png file exists
       check: ConfirmFileExists
       
@@ -343,7 +343,7 @@ setup: |
           degree:
             - DS: "I"
               rationale: "PO1. pass indicates use of web-based platform to present visualized data"
-    - description: Confirm that 05_recommendations.md has the correct number of headers
+    - description: Confirm that 06_references.md has the correct number of headers
       check: CountMarkdownTags
       options:
         tag: heading
