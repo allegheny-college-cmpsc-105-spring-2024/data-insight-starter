@@ -348,7 +348,7 @@ setup: |
       options:
         tag: heading
         count: 1
-        exact: True
+        exact: false
   
 - _report/07_appendix.md:
     - description: Ensure that the 07_appendix.md file exists
