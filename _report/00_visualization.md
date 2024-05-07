@@ -7,8 +7,10 @@ nav: true
 
 Instructions in `00_visualization.md`
 
-- TODO: write your name
-- TODO: write the date and course
+May 5, 2024
+by Manasvi Bantawa for Computer Science 105 with Professor Graber
+
+
 - TODO: format the above however you would like
 - TODO: embed an image that showcases your project insight.
 - TODO: if the image was generated in Spyder, it must be located in
